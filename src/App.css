@@ -1,0 +1,9 @@
+:root {
+    --color-Primary: #0275d8;
+    --bg-page: rgb(235, 235, 235);
+}
+
+body {
+    background-color: var(--bg-page);
+    overflow-x: hidden;
+}

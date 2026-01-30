@@ -1,0 +1,141 @@
+.slick-slider .slick-slide {
+    position: relative;
+}
+.container-subs{
+}
+.container-subscriptions{
+    margin: auto;
+    min-width: 90%;
+}
+.slick-initialized .slick-slide {
+    display: block;
+}
+.carousel-container-subscriptions{
+    margin: auto;
+    width: fit-content;
+}
+.slick-slide {
+    display: none;
+    float: left;
+    height: 100%;
+    min-height: 1px;
+    min-width: 400px !important;
+}
+.partners-subscriptions__slide {
+    padding: 0 8px;
+}
+.partners-subscriptions__slide-link {
+    -webkit-border-radius: 6px;
+    border-radius: 6px;
+    display: block;
+    height: 250px;
+    overflow: hidden;
+    position: relative;
+    text-align: center;
+}
+.partners-subscriptions__slide-gradient {
+    bottom: 0;
+    height: 124px;
+    position: absolute;
+    width: 100%;
+    z-index: 1;
+}
+.slick-slide img {
+    display: block;
+}
+.partners-subscriptions__slide-logo{
+    height: 70px;
+}
+.partners-subscriptions__slide-texts-line-span{
+    font-size: 12px !important;
+}
+.partners-subscriptions__slide-background {
+    display: block;
+    height: 100%;
+    -o-object-fit: cover;
+    object-fit: cover;
+    -o-object-position: top;
+    object-position: top;
+    width: 100%;
+}
+.partners-subscriptions__slide-logo-text {
+    -webkit-align-items: center;
+    align-items: center;
+    bottom: 0;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    display: -webkit-flex;
+    display: flex;
+    left: 0;
+    padding: 16px;
+    position: absolute;
+    width: 100%;
+    z-index: 1;
+}
+.clipped {
+    clip: rect(0 0 0 0);
+    border: 0;
+    -webkit-clip-path: inset(50%);
+    clip-path: inset(50%);
+    display: block;
+    margin: 0 -1px -1px 0;
+    overflow: hidden;
+    padding: 0;
+    position: absolute;
+    z-index: -1;
+}
+.slick-slide img {
+    display: block;
+}
+.partners-subscriptions__slide-logo {
+    -webkit-align-self: flex-end;
+    align-self: flex-end;
+    -webkit-border-radius: 6px;
+    border-radius: 6px;
+    display: -webkit-flex;
+    display: flex;
+    max-height: 100%;
+    max-width: 100%;
+    min-width: 80px;
+    -o-object-fit: cover;
+    object-fit: cover;
+    overflow: hidden;
+}
+.partners-subscriptions__body {
+    width: 100%;
+    overflow-x: auto;
+}
+.partners-subscriptions__body {
+    overflow: hidden;
+}
+.carousel-container-subscriptions {
+    display: flex;
+    flex-wrap: nowrap;
+    width: 100%;
+}
+.partners-subscriptions__slide-texts {
+    color: #fff;
+}
+.partners-subscriptions__slide-texts-line--benefit {
+    font-size: 22px;
+    font-weight: 600;
+    line-height: 1.09;
+}
+.partners-subscriptions__slide-texts-line {
+    display: block;
+    margin-left: 16px;
+    text-align: left;
+}
+.partners-subscriptions__slide-texts-line--partner-name {
+    font-size: 18px;
+    letter-spacing: .4px;
+    line-height: 1.11;
+    margin-top: 4px;
+}
+.partners-subscriptions__slide-texts-line {
+    display: block;
+    margin-left: 16px;
+    text-align: left;
+}
+

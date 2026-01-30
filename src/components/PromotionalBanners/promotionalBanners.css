@@ -1,0 +1,94 @@
+.promotional-banners-container {
+    max-width: 1200px;
+    margin: 0 auto 40px;
+    padding: 0 10px;
+    display: flex;
+    gap: 12px;
+}
+
+.promo-banner {
+    flex: 1;
+    background-color: white;
+    border-radius: 4px;
+    overflow: hidden;
+    display: flex;
+    height: 125px;
+    /* Reduced to match approximately the card height if needed, or keeping standard banner height */
+    text-decoration: none;
+    box-shadow: 0 1px 2px 0 rgba(0, 0, 0, 0.1);
+    transition: box-shadow 0.2s;
+}
+
+.promo-banner:hover {
+    box-shadow: 0 4px 12px 0 rgba(0, 0, 0, 0.15);
+}
+
+.promo-banner-text-section {
+    flex: 1;
+    background-color: black;
+    color: white;
+    padding: 15px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    position: relative;
+    /* To cut the image part later if needed, but for now simple flex */
+    max-width: 40%;
+}
+
+.promo-banner-subtitle {
+    font-size: 10px;
+    font-weight: 600;
+    letter-spacing: 0.5px;
+    text-transform: uppercase;
+    margin-bottom: 4px;
+    color: #dedede;
+}
+
+.promo-banner-title {
+    font-size: 16px;
+    font-weight: 700;
+    line-height: 1.1;
+    margin-bottom: 8px;
+    text-transform: uppercase;
+}
+
+.promo-banner-button {
+    font-size: 12px;
+    background-color: #3483fa;
+    color: white;
+    padding: 6px 12px;
+    border-radius: 4px;
+    width: fit-content;
+    font-weight: 600;
+    margin-top: 8px;
+    /* Optional: Hide this if we want just "Ver más" text link style like the image */
+}
+
+/* Actually image shows just "Ver más" text, let's adjust */
+.promo-banner-cta {
+    font-size: 13px;
+    color: white;
+    font-weight: 500;
+    display: flex;
+    align-items: center;
+}
+
+.promo-banner-img-section {
+    flex: 1.5;
+    position: relative;
+    background-color: white;
+    /* or matching the image bg */
+}
+
+.promo-banner-img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+@media (max-width: 768px) {
+    .promotional-banners-container {
+        flex-direction: column;
+    }
+}

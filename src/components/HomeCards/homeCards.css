@@ -1,0 +1,278 @@
+.home-cards-container {
+    max-width: 1200px;
+    margin: -100px auto 40px;
+    position: relative;
+    z-index: 10;
+    padding: 0 10px;
+}
+
+.home-cards-wrapper {
+    display: flex;
+    gap: 12px;
+    overflow-x: auto;
+    padding-bottom: 20px;
+    scrollbar-width: none;
+    /* Hide scrollbar Firefox */
+}
+
+.home-cards-wrapper::-webkit-scrollbar {
+    display: none;
+    /* Hide scrollbar Chrome/Safari */
+}
+
+.home-card {
+    background: white;
+    border-radius: 6px;
+    padding: 12px;
+    min-width: 188px;
+    min-height: 250px;
+    flex: 1;
+    box-shadow: 0 1px 2px 0 rgba(0, 0, 0, 0.1);
+    display: flex;
+    flex-direction: column;
+    cursor: pointer;
+    transition: box-shadow 0.2s;
+}
+
+.home-card:hover {
+    box-shadow: 0 4px 12px 0 rgba(0, 0, 0, 0.15);
+}
+
+.home-card-title {
+    font-size: 16px;
+    font-weight: 500;
+    color: #333;
+    margin-bottom: 8px;
+    height: 38px;
+    display: flex;
+    align-items: center;
+}
+
+.home-card-img {
+    width: 100%;
+    height: 100px;
+    object-fit: contain;
+    margin-bottom: 8px;
+}
+
+.home-card-img-product {
+    height: 126px;
+}
+
+.home-card-img-promo {
+    margin-bottom: 34px;
+}
+
+.home-card-icon {
+    font-size: 40px;
+    height: 100px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 8px;
+}
+
+
+
+.home-card-content {
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+}
+
+.home-card-info {
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+    flex: 1;
+}
+
+.home-card-label {
+    font-size: 13px;
+    color: #333;
+    line-height: 1.2;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    display: -webkit-box;
+    -webkit-line-clamp: 2;
+    line-clamp: 2;
+    -webkit-box-orient: vertical;
+}
+
+.home-card-label-promo {
+    color: #3483fa;
+    text-align: center;
+    font-size: 14px;
+    margin-bottom: 8px;
+    display: block;
+}
+
+.home-card-label-black {
+    color: #333;
+    text-align: center;
+    font-size: 13px;
+    margin-bottom: 8px;
+    display: block;
+    font-weight: 400;
+    line-height: 1.2;
+    transition: color 0.2s;
+}
+
+.home-card:hover .home-card-label-black {
+    color: #3483fa;
+}
+
+.home-card-promo .home-card-title {
+    font-weight: 400;
+}
+
+.home-card-description {
+    color: #3483fa;
+    /* Blue color for promo cards */
+    text-align: center;
+    /* Centered text */
+    margin-bottom: 4px;
+    font-size: 14px;
+    /* Slightly larger */
+}
+
+.home-card-price-row {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    margin-top: 4px;
+}
+
+.home-card-price {
+    font-size: 18px;
+    font-weight: 400;
+}
+
+.home-card-discount {
+    font-size: 12px;
+    color: #00a650;
+    font-weight: 500;
+}
+
+.home-card-subtitle {
+    font-size: 12px;
+    color: #999;
+}
+
+.home-card-shipping {
+    font-size: 12px;
+    color: #00a650;
+    font-weight: 500;
+}
+
+.home-card-link-container {
+    margin-top: auto;
+    width: 100%;
+}
+
+.home-card-button {
+    display: block;
+    width: 100%;
+    padding: 10px 0;
+    text-align: center;
+    background-color: #E3EDFB;
+    /* Light blue from image */
+    color: #3483fa;
+    /* Blue text */
+    font-size: 12px;
+    font-weight: 600;
+    border-radius: 4px;
+    text-decoration: none;
+    transition: background-color 0.2s;
+    border: none;
+}
+
+.home-card-button:hover {
+    background-color: #d1e4fb;
+}
+
+.home-card-link {
+    font-size: 13px;
+    color: #3483fa;
+    text-decoration: none;
+    margin-top: 4px;
+}
+
+@media (max-width: 768px) {
+    .home-cards-container {
+        margin-top: 10px;
+    }
+
+    .home-card {
+        min-width: 160px;
+    }
+}
+
+.home-cards-arrow {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 48px;
+    height: 48px;
+    border-radius: 50%;
+    background-color: white;
+    border: none;
+    box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.2);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 24px;
+    color: #3483fa;
+    cursor: pointer;
+    z-index: 20;
+    transition: box-shadow 0.2s;
+    opacity: 0;
+    /* Hidden by default, shown on hover */
+}
+
+.home-cards-container:hover .home-cards-arrow {
+    opacity: 1;
+}
+
+.home-cards-arrow:hover {
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.3);
+}
+
+.home-cards-arrow-left {
+    left: -24px;
+}
+
+.home-cards-arrow-right {
+    right: -24px;
+}
+
+.fav-button-home {
+    position: absolute;
+    top: 50px;
+    /* Below the title */
+    right: 12px;
+    background: white;
+    border: none;
+    border-radius: 50%;
+    width: 32px;
+    height: 32px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    transition: transform 0.2s, background 0.2s;
+    z-index: 15;
+}
+
+.fav-button-home:hover {
+    transform: scale(1.1);
+}
+
+.fav-button-home.active {
+    background: #f5faff;
+}
+
+.fav-button-home svg {
+    transition: fill 0.2s, stroke 0.2s;
+}

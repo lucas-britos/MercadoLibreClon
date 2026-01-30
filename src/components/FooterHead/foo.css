@@ -1,0 +1,35 @@
+@media screen and (max-width: 620px){
+    .discovery .advertising:first-child{
+        margin-right: 0;
+   }
+    .advertising__info__text .advertising__info__text--bold{
+        font-weight: .4rem;
+   }
+    .top-container-footer{
+        display: flex;
+        flex-direction: column;
+   }
+    .info-slide{
+        width: 100% !important;
+   }
+    .regret__container{
+        display: flex;
+        flex-direction: column;
+   }
+    .regret__box{
+        margin: auto;
+   }
+    .container-regulation-row{
+        flex-direction: column;
+        align-items: center;
+   }
+    .regulation-row{
+        display: flex;
+        width: fit-content;
+        margin: auto;
+   }
+    .nav-footer-navigation__menu{
+        display: flex;
+        justify-content: center;
+   }
+}

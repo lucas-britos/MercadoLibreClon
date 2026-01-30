@@ -1,0 +1,139 @@
+:root {
+    --color-Primary: #0275d8;
+    --bg-page: rgb(235, 235, 235);
+}
+
+#carousel {
+    position: relative;
+    width: 100%;
+    /* Keep aspect ratio or use a fixed height that works for the banner */
+    /* Mercado Libre banners are usually around 300-400px on desktop */
+    height: 400px;
+    min-height: 400px;
+    overflow: hidden;
+    background-color: #ffe600;
+    /* Close to ML yellow for background if image doesn't load or has transparency */
+}
+
+/* Gradient overlay at the bottom */
+#carousel::after {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 150px;
+    /* Height of the fade */
+    background: linear-gradient(to bottom, rgba(235, 235, 235, 0), #ebebeb);
+    pointer-events: none;
+    z-index: 5;
+}
+
+.slide {
+    display: none;
+    width: 100%;
+    height: 100%;
+    transition: opacity 0.5s ease-in-out;
+}
+
+.slide.active {
+    display: block;
+}
+
+.slide img {
+    width: 100%;
+    height: 100%;
+    /* Restore full height */
+    margin-top: 0;
+    /* Remove margin */
+    object-fit: cover;
+    object-position: top center;
+    /* Align to top to show full upper content */
+    display: block;
+}
+
+/* Navigation Buttons */
+.btns-carousel {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 40px;
+    height: 80px;
+    z-index: 10;
+    border: none;
+    background-color: white;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    opacity: 0;
+    /* Hidden by default, shown on hover */
+    transition: opacity 0.2s, box-shadow 0.2s;
+    color: #3483fa;
+}
+
+#carousel:hover .btns-carousel {
+    opacity: 1;
+}
+
+.btns-carousel:hover {
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.btn-back {
+    left: 0;
+    border-radius: 0 40px 40px 0;
+}
+
+.btn-next {
+    right: 0;
+    border-radius: 40px 0 0 40px;
+}
+
+/* Dots */
+.slide-buttons {
+    position: absolute;
+    bottom: 20px;
+    left: 50%;
+    transform: translateX(-50%);
+    display: flex;
+    gap: 8px;
+    z-index: 10;
+}
+
+.point-button {
+    width: 8px;
+    height: 8px;
+    border-radius: 50%;
+    background-color: rgba(0, 0, 0, 0.2);
+    border: none;
+    padding: 0;
+    cursor: pointer;
+    transition: background-color 0.2s;
+}
+
+.point-button:hover,
+.point-button.active {
+    /* You might need logic to add 'active' class to dots */
+    background-color: #fff;
+    border: 1px solid rgba(0, 0, 0, 0.2);
+}
+
+/* Responsive adjustments */
+@media (max-width: 1024px) {
+    #carousel {
+        min-height: 280px;
+    }
+}
+
+@media (max-width: 768px) {
+    #carousel {
+        min-height: 200px;
+    }
+
+    .btns-carousel {
+        display: none;
+        /* Hide arrows on mobile */
+    }
+}

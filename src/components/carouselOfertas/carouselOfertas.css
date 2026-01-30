@@ -1,0 +1,121 @@
+:root {
+  --color-Primary: #0275d8;
+  --bg-page: rgb(235, 235, 235);
+}
+
+.swiper-pagination-bullet-active {
+  background-color: blue;
+  width: 10px;
+  height: 10px;
+}
+
+.carousel-container {
+  max-width: 100%;
+  margin: 0 auto;
+  display: flex;
+  justify-content: center;
+}
+
+body {
+  background: #eee;
+  font-family: Helvetica Neue, Helvetica, Arial, sans-serif;
+  font-size: 14px;
+  background-color: var(--bg-page);
+}
+
+.section-header {
+  align-items: center;
+  display: flex;
+  line-height: 1.2;
+  margin-bottom: 22px;
+}
+
+.container-all-carousel {
+  height: 430px;
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
+  margin-top: 50px;
+  padding: 0 10px;
+}
+
+.section-header h2 {
+  font-size: 26px;
+  font-weight: 300;
+  margin: 0 0 0 8px;
+  color: #666;
+}
+
+.section-header a {
+  font-size: 16px;
+  margin-bottom: 2px;
+}
+
+.section-header h2+a {
+  margin-left: 16px;
+}
+
+.section-header .ui-link,
+.section-header a {
+  align-self: baseline;
+  color: #3483fa;
+  font-size: 16px;
+  margin: auto 0 2px;
+  text-decoration: none;
+}
+
+.carousel-ofertas {
+  width: 100%;
+}
+
+.custom-button-group {
+  position: absolute;
+  top: 50;
+  left: 0;
+  right: 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px;
+  z-index: 0;
+  width: 100%;
+  overflow: visible;
+  margin-right: 20px;
+  display: none;
+}
+
+.custom-button-group.rigth-button {
+  flex-direction: row-reverse;
+  height: 0;
+  transition: all 3s;
+}
+
+.container-ofertas-carousel:hover .custom-button-group {
+  display: flex;
+}
+
+.card-container-ofertas a {
+  z-index: 1;
+}
+
+.custom-button-group__button {
+  border: none;
+  border-radius: 50%;
+  height: 70px;
+  width: 70px;
+}
+
+.react-multiple-carousel__arrow,
+.react-multiple-carousel__arrow {
+  display: none;
+}
+
+.container-all-carousel {
+  overflow: hidden;
+}
+
+@media only screen and (max-width: 484px) {
+  * {
+    max-width: 100%;
+  }
+}

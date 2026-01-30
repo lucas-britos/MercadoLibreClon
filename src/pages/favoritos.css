@@ -1,0 +1,99 @@
+.favoritos-container {
+    max-width: 1200px;
+    margin: 40px auto;
+    padding: 0 20px;
+    min-height: 60vh;
+}
+
+.favoritos-header {
+    margin-bottom: 30px;
+    border-bottom: 1px solid #eee;
+    padding-bottom: 20px;
+}
+
+.favoritos-header h1 {
+    font-size: 26px;
+    font-weight: 600;
+    color: #333;
+    margin-bottom: 5px;
+}
+
+.favoritos-header p {
+    color: #666;
+    font-size: 14px;
+}
+
+.favoritos-empty {
+    text-align: center;
+    padding: 60px 20px;
+    background: white;
+    border-radius: 8px;
+    box-shadow: 0 1px 2px rgba(0, 0, 0, 0.1);
+}
+
+.empty-icon {
+    font-size: 64px;
+    margin-bottom: 20px;
+    color: #eee;
+}
+
+.favoritos-empty h2 {
+    font-size: 20px;
+    font-weight: 600;
+    color: #333;
+    margin-bottom: 10px;
+}
+
+.favoritos-empty p {
+    color: #666;
+    margin-bottom: 30px;
+}
+
+.btn-explore {
+    display: inline-block;
+    background-color: #3483fa;
+    color: white;
+    padding: 12px 24px;
+    border-radius: 6px;
+    font-weight: 600;
+    text-decoration: none;
+    transition: background 0.2s;
+}
+
+.btn-explore:hover {
+    background-color: #2968c8;
+    color: white;
+}
+
+.favoritos-grid {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+/* Adjust card size in favorites grid if needed */
+.favoritos-grid .card {
+    flex: 0 0 calc(25% - 15px);
+    max-width: calc(25% - 15px);
+}
+
+@media (max-width: 992px) {
+    .favoritos-grid .card {
+        flex: 0 0 calc(33.33% - 14px);
+        max-width: calc(33.33% - 14px);
+    }
+}
+
+@media (max-width: 768px) {
+    .favoritos-grid .card {
+        flex: 0 0 calc(50% - 10px);
+        max-width: calc(50% - 10px);
+    }
+}
+
+@media (max-width: 480px) {
+    .favoritos-grid .card {
+        flex: 0 0 100%;
+        max-width: 100%;
+    }
+}

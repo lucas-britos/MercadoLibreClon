@@ -1,0 +1,95 @@
+.ui-card.official-stores-slide.is-link{
+    background-color: #fffdfd;
+}
+.card-tienda-container{
+    width: 310px;
+    position: relative;
+    display: block;
+    float: left;
+    height: 100%;
+    min-height: 1px;
+}
+.official-stores-slide {
+    box-shadow: 0 1px 1px 0 rgb(0 0 0 / 10%), 0 -1px 2px 0 rgb(0 0 0 / 10%);
+    height: 340px;
+    margin: 0 8px 20px;
+}
+.official-stores-slide-background {
+    height: 95px;
+    margin-bottom: -40px;
+    overflow: hidden;
+    text-align: center;
+}
+.official-stores-slide-background img {
+    display: inline-block;
+    height: 100%;
+    margin: 0 -100px;
+    width: auto;
+}
+.official-stores-slide-logo {
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 2px 15px 0 rgb(0 0 0 / 10%);
+    height: 80px;
+    margin: 0 auto;
+    overflow: hidden;
+    position: relative;
+    width: 80px;
+}
+.official-stores-slide-logo img {
+    height: 100%;
+    width: 100%;
+}
+.official-stores-slide-items {
+    height: 74px;
+    text-align: center;
+}
+.official-stores-slide-title {
+    color: #333;
+    font-size: 24px;
+    font-weight: 600;
+    height: 35px;
+    margin: 16px 0;
+    overflow: hidden;
+    padding: 0 16px;
+    text-align: center;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+.official-stores-slide-item {
+    border: 1px solid #eee;
+    border-radius: 8px;
+    display: inline-block;
+    height: 70px;
+    margin: 3px;
+    overflow: hidden;
+    width: 70px;
+}
+.official-stores-slide-item img {
+    height: 70px;
+    width: 70px;
+}
+.official-stores-slide-action {
+    margin-top: 22px;
+    text-align: center;
+}
+.official-stores-slide-action a {
+    color: #999;
+    font-size: 15px;
+    font-weight: 600;
+    text-decoration: none;
+}
+.clipped {
+    clip: rect(0 0 0 0);
+    border: 0;
+    clip-path: inset(50%);
+    display: block;
+    margin: 0 -1px -1px 0;
+    overflow: hidden;
+    padding: 0;
+    position: absolute;
+    z-index: -1;
+}
+.official-stores-slide.is-link {
+    cursor: pointer;
+}

@@ -1,0 +1,10 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64">
+    <g id="HOUSE-20" data-name="HOUSE" fill="rgb(52, 131, 250)">
+    <rect x="46.55" y="19" width="1.94" height="5"/>
+    <rect x="46.55" y="33" width="1.94" height="5"/>
+    <polygon points="45.58 18 49.45 18 49.45 39 50.42 39 50.42 17 44.61 17 44.61 39 45.58 39 45.58 18"/>
+    <rect x="46.55" y="26" width="1.94" height="5"/><rect x="15.52" y="19" width="1.94" height="5"/>
+    <rect x="15.52" y="33" width="1.94" height="5"/><rect x="15.52" y="26" width="1.94" height="5"/>
+    <path fill="rgb(52, 131, 250)" d="M58.18,51V41H30.06V51H28.12V40a1,1,0,0,1,1-1H42.67V5H27.15V32a1,1,0,1,1-1.94,0V5H21.33V51H19.39V17H13.58V51H11.64V41H5.82V51H0v2H64V51ZM14.55,18h3.87V39H14.55Z"/>
+    </g>
+</svg>

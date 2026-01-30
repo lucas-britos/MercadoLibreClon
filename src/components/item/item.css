@@ -1,0 +1,29 @@
+.fav-button {
+    position: absolute;
+    top: 15px;
+    right: 15px;
+    background: white;
+    border: none;
+    border-radius: 50%;
+    width: 36px;
+    height: 36px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    transition: transform 0.2s, background 0.2s;
+    z-index: 5;
+}
+
+.fav-button:hover {
+    transform: scale(1.1);
+}
+
+.fav-button.active {
+    background: #f5faff;
+}
+
+.fav-button svg {
+    transition: fill 0.2s, stroke 0.2s;
+}

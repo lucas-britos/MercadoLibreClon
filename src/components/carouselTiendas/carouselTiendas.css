@@ -1,0 +1,36 @@
+.container-all-carousel-tiendas {
+    background-image: linear-gradient(0, #e6e6e6, hsla(0, 0%, 100%, 0) 100%);
+}
+
+.carousel-tiendas-container {
+    min-width: 870px;
+    width: 100%;
+    -moz-box-sizing: content-box;
+    box-sizing: content-box;
+    height: 342px;
+    margin-bottom: -14px;
+    padding-bottom: 14px;
+    margin: auto;
+    padding-bottom: 60px;
+}
+
+.react-multi-carousel-track {
+    max-width: 90%;
+}
+
+.container-all-carousel-tiendas {
+    width: 100%;
+    max-width: 1200px;
+    padding: 0 10px;
+    margin: 50px auto 0;
+}
+
+.carousel-tiendas-container:hover .custom-button-group__button {
+    display: flex;
+}
+
+@media only screen and (max-width: 1200px) {
+    .carousel-tiendas-container {
+        min-width: 100px;
+    }
+}

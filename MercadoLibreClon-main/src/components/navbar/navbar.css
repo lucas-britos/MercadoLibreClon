@@ -1,0 +1,221 @@
+.navs-container{
+    width: 100%;
+    height: 100px;
+    background-color: #fff159;
+}
+.nav-top-container{
+    width: 87%;
+    margin: auto;
+    height: 40px;
+    display: flex;
+    padding-top: 10px;
+}
+.nav-lefth-top{
+    height: 48px;
+    width: 11.3%;
+    margin: 0;
+}
+.nav-center-top{
+    width: 50%;
+    margin-left: 2.8rem;
+    height: 48px;
+}
+.nav-right-top{
+    width: 27%;
+    height: 48px;
+    margin-left: 6rem;
+}
+.img-logo{
+    height: 38px;
+}
+.formSearch{
+    margin-left: 4px;
+    width: 100%;
+    display: flex;
+}
+.nav-search-input{
+    border: none;
+    padding-left: 15px;
+    font-size: 17px;
+}
+.nav-search-input::placeholder{
+    padding-left: 1px;
+    color: rgb(161, 161, 161);
+    font-size: .95rem;
+}
+.nav-search-input:focus{
+    border: 1px solid blue !important;
+    outline: none;
+   /* opcionalmente puedes quitar el borde predeterminado del foco */
+}
+.nav-search-btn{
+    background-color: white;
+    border-left: 1px solid rgb(213, 209, 209);
+    border-left-width: 20%;
+    padding-left: 15px;
+}
+.nav-disney img{
+    margin-left: -20px;
+    height: 35px;
+    max-width: 110%;
+}
+.nav-bottom-container{
+    margin: auto;
+    height: 40px;
+    width: 87%;
+    display: flex;
+    margin-top: 15px;
+}
+.nav-lefth-bottom{
+    padding: 0;
+    width: 8.5%;
+    height: 100%;
+}
+.nav-lefth-bottom button{
+    width: 100%;
+    padding: 0 !important;
+}
+.nav-center-bottom{
+    width: 50%;
+    height: 100%;
+    margin-left: 4.7rem;
+    margin-top: 9px;
+}
+.nav-right-bottom{
+    width: 28%;
+    height: 100%;
+    margin-left: 5rem;
+}
+.svgcont{
+    margin-bottom: 14px;
+}
+.nav-margin{
+    margin-left: 10px;
+}
+.navbar-nav{
+    display: flex;
+    flex-direction: row;
+}
+.nav-link-item{
+    font-size: 13px;
+    margin-right: 20px;
+    line-height: 2rem;
+    color: rgb(89, 86, 86);
+}
+.enlace-nav-link-container{
+    margin-right: 10px;
+}
+.menu-modal{
+    background-color: rgb(51, 51, 51);
+    width: 250px;
+    margin-top: 9px !important;
+    margin-left: -130px !important;
+}
+.menu-modal li a{
+    color: white;
+    font-size: 13px;
+    padding-left: 25px !important;
+}
+.container-menu-modal{
+    padding-top: 15px;
+}
+.menu-modal a:hover{
+    background-color: rgb(52, 131, 250);
+    color: white;
+}
+.nav-link-item:hover{
+    color: rgb(51, 51, 51);
+}
+.img-container{
+    margin-right: 1rem;
+}
+/*----------------------------------------------MEDIA QUERYS-------------------------------------------*/
+/* Definimos los estilos para las pantallas con un ancho menor o igual a 768px */
+@media only screen and (max-width: 1200px) {
+    #moda{
+        display: none;
+   }
+    .navs-container, .nav-top-container, .nav-bottom-container{
+        width: 100%;
+   }
+    .enlace-nav-link-container{
+        min-width: fit-content;
+   }
+    .navbar-nav{
+        margin: auto;
+        width: fit-content;
+   }
+    .nav-right-bottom{
+        margin: 0;
+        width: 100%;
+   }
+    .button-ubicacion{
+        min-width: fit-content;
+   }
+}
+@media only screen and (max-width: 1096px) {
+    #supermercado{
+        display: none;
+   }
+}
+@media only screen and (max-width: 850px) {
+    #historial{
+        display: none;
+   }
+}
+@media only screen and (max-width: 800px) {
+    #compras{
+        display: none;
+   }
+    .nav-lefth-top{
+        margin-right: 10px;
+        width: auto;
+   }
+    .navbar-brand.nav-disney img{
+        display: none;
+        width: 0;
+   }
+    .nav-center-top{
+        margin-left: auto;
+        width: 620px;
+   }
+    .img-container{
+        margin-right: 0;
+   }
+    .img-logo{
+        width: 95%;
+        height: auto;
+        max-height: 38px;
+        min-height: 30px;
+        min-width: 90%;
+   }
+    .nav-right-top{
+        margin-left: 0;
+        width: auto;
+   }
+}
+@media only screen and (max-width: 670px){
+    #ingresa, #crear-cuenta{
+        display: none;
+   }
+    .nav-right-bottom{
+        width: 10%;
+        margin-left: auto;
+   }
+}
+@media only screen and (max-width: 500px){
+    #ayuda{
+        display: none;
+   }
+    .payment-data-section-trailing{
+        display: none;
+   }
+   .button-ubicacion span{
+    font-size: 1px;
+   }
+}
+@media only screen and (max-width: 400px) {
+    #vender, #ofertas{
+        display: none;
+   }
+}

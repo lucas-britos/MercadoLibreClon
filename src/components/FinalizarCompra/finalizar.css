@@ -1,0 +1,116 @@
+.contCartVacio p {
+    margin-top: 90px !important;
+}
+
+.contCartVacio {
+    min-height: 100vh;
+    position: relative;
+}
+
+.btnC {
+    width: 100% !important;
+}
+
+.checkout-page-container {
+    margin-top: 50px !important;
+}
+
+.containerForm {
+    max-width: 600px;
+    width: 90%;
+    margin: auto;
+    padding: 40px;
+    height: fit-content;
+    margin-bottom: 20px;
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.formulario {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.formulario__label {
+    display: block;
+    font-weight: 600;
+    padding: 5px 0;
+    cursor: pointer;
+    color: #333;
+}
+
+.formulario__grupo-input {
+    position: relative;
+}
+
+.formulario__input {
+    width: 100%;
+    background: #fff;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    height: 45px;
+    line-height: 45px;
+    padding: 0 15px;
+    transition: .3s ease all;
+}
+
+.formulario__input:focus {
+    border: 1px solid #3483fa;
+    outline: none;
+    box-shadow: 0 0 5px rgba(52, 131, 250, 0.3);
+}
+
+.input-error {
+    border: 1px solid #dc3545 !important;
+}
+
+.formulario__input-error-activo {
+    display: block;
+    font-size: 12px;
+    color: #dc3545;
+    margin-top: 5px;
+}
+
+.formulario__grupo-btn-enviar {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 20px;
+}
+
+.formulario__btn {
+    height: 45px;
+    line-height: 45px;
+    width: 100%;
+    background: #3483fa;
+    color: #fff;
+    font-weight: bold;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    transition: background 0.2s ease;
+    font-size: 16px;
+}
+
+.formulario__btn:hover {
+    background: #2968c8;
+}
+
+.formulario__btn:disabled {
+    background: #ccc;
+    cursor: not-allowed;
+}
+
+#containerId {
+    margin-bottom: 20px;
+}
+
+#tittleConfirm {
+    text-align: center;
+    margin-bottom: 30px;
+    font-weight: 600;
+    color: #333;
+    font-size: 24px;
+}

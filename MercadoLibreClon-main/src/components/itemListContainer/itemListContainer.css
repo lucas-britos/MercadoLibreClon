@@ -1,0 +1,17 @@
+.spinner{
+    height: 90vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.itemList{
+    display: flex;
+    margin-top: 20px;
+    flex-wrap: wrap;
+    text-align: center;
+}
+.itemList img{
+    height: 150px;
+    width: fit-content;
+    margin: 0 auto;
+}

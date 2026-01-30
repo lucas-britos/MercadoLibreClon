@@ -1,0 +1,136 @@
+.mis-compras-container {
+    max-width: 1000px;
+    margin: 40px auto;
+    padding: 0 20px;
+    min-height: 60vh;
+}
+
+.mis-compras-header h1 {
+    font-size: 24px;
+    font-weight: 600;
+    color: #333;
+    margin-bottom: 24px;
+}
+
+.empty-purchases-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 60px;
+}
+
+.empty-purchases-card {
+    background: white;
+    padding: 48px;
+    border-radius: 8px;
+    text-align: center;
+    box-shadow: 0 1px 2px 0 rgba(0, 0, 0, 0.1);
+    max-width: 400px;
+    width: 100%;
+}
+
+.empty-purchases-icon {
+    margin-bottom: 20px;
+}
+
+.empty-purchases-card h2 {
+    font-size: 20px;
+    font-weight: 600;
+    color: #333;
+    margin-bottom: 12px;
+}
+
+.empty-purchases-card p {
+    font-size: 16px;
+    color: #666;
+    margin-bottom: 24px;
+}
+
+.btn-start-shopping {
+    display: inline-block;
+    background-color: #3483fa;
+    color: white;
+    padding: 12px 24px;
+    border-radius: 6px;
+    text-decoration: none;
+    font-weight: 600;
+    transition: background-color 0.2s;
+}
+
+.btn-start-shopping:hover {
+    background-color: #2968c8;
+}
+
+.purchase-card {
+    background: white;
+    border-radius: 8px;
+    box-shadow: 0 1px 2px 0 rgba(0, 0, 0, 0.1);
+    margin-bottom: 20px;
+    overflow: hidden;
+}
+
+.purchase-card-header {
+    background: #f5f5f5;
+    padding: 12px 20px;
+    display: flex;
+    justify-content: space-between;
+    border-bottom: 1px solid #eee;
+    font-size: 14px;
+    color: #666;
+}
+
+.purchase-item {
+    padding: 20px;
+    display: flex;
+    align-items: center;
+    border-bottom: 1px solid #eee;
+}
+
+.purchase-item:last-child {
+    border-bottom: none;
+}
+
+.purchase-item-img {
+    width: 80px;
+    height: 80px;
+    object-fit: contain;
+    margin-right: 20px;
+}
+
+.purchase-item-info {
+    flex: 1;
+}
+
+.purchase-item-name {
+    font-size: 16px;
+    font-weight: 400;
+    color: #333;
+    margin-bottom: 4px;
+}
+
+.purchase-item-quantity {
+    font-size: 14px;
+    color: #666;
+    margin-bottom: 4px;
+}
+
+.purchase-item-price {
+    font-size: 18px;
+    font-weight: 400;
+    color: #333;
+}
+
+.btn-re-buy {
+    background-color: rgba(65, 137, 230, .15);
+    color: #3483fa;
+    padding: 10px 20px;
+    border-radius: 6px;
+    text-decoration: none;
+    font-weight: 600;
+    font-size: 14px;
+    transition: background-color 0.2s;
+}
+
+.btn-re-buy:hover {
+    background-color: rgba(65, 137, 230, .2);
+}

@@ -1,0 +1,418 @@
+.foo {
+    background-color: #fff;
+    margin-top: 20px;
+    overflow: hidden;
+}
+
+.site-shopping-info {
+    background-color: #fff;
+    margin-top: 20px;
+    overflow: hidden;
+}
+
+.site-shopping-info .container {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+@media screen and (max-width: 1280px) {
+    .site-shopping-info .info-slide {
+        padding: 35px 24px 20px;
+    }
+}
+
+.site-shopping-info .info-slide {
+    float: left;
+    width: 33.3333333333%;
+}
+
+.site-shopping-info .info-slide {
+    box-sizing: border-box;
+    padding: 20px 45px 10px;
+    position: relative;
+    text-align: center;
+}
+
+.site-shopping-info .info-slide>.img-container {
+    height: 55px;
+}
+
+.site-shopping-info .info-slide h2 {
+    color: #4b4b4b;
+    font-size: 20px;
+    font-weight: 500;
+    line-height: 1.4;
+    margin: 16px 0 0;
+}
+
+.site-shopping-info .info-slide p {
+    color: #999;
+    font-size: 15px;
+    line-height: 1.2;
+    margin: 4px 0 10px;
+}
+
+.site-shopping-info .info-slide a {
+    color: #3483fa;
+    font-size: 14px;
+    text-decoration: none;
+}
+
+/*--------------------------------------section 2--------------------------*/
+/*--------------------------------------section 2--------------------------*/
+/*--------------------------------------section 2--------------------------*/
+section.regret {
+    align-items: center;
+    background-color: #fff;
+    display: flex;
+    justify-content: center;
+    margin: 0;
+    padding: 0;
+}
+
+.regret {
+    background-color: #fff;
+    color: rgba(0, 0, 0, .55);
+    font-size: 16px;
+    font-weight: 600;
+    text-align: center;
+}
+
+.regret__container {
+    align-items: center;
+    align-items: stretch;
+    display: flex;
+    flex-grow: 1;
+    justify-content: space-evenly;
+    max-width: 1200px;
+    padding: 25px 12px 12px;
+    padding-bottom: 26px;
+    margin: 0 auto;
+}
+
+.regret__box {
+    align-items: center;
+    border: 1px solid rgba(0, 0, 0, .1);
+    border-radius: 6px;
+    display: flex;
+    justify-content: center;
+    margin: 0 20px;
+    padding: 16px;
+    width: 100%;
+}
+
+.regret__content {
+    line-height: 1.3;
+    margin: 0;
+    padding: 0;
+}
+
+.regret__content a {
+    color: #3483fa;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 1.3;
+    text-decoration: none;
+}
+
+/*--------------------------------------fin section 2--------------------------*/
+/*--------------------------------------fin section 2--------------------------*/
+/*--------------------------------------fin section 2--------------------------*/
+/*-----------------------------------SECCION 3 INICIO----------------------------*/
+/*-----------------------------------SECCION 3 INICIO----------------------------*/
+/*-----------------------------------SECCION 3 INICIO----------------------------*/
+section.regulation-row div.container {
+    padding: 10px;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+section.regulation-row div.container .container-regulation-row {
+    display: flex;
+    gap: 10px;
+    justify-content: space-between;
+}
+
+.help-email {
+    align-items: center;
+    display: flex;
+}
+
+.help-email__link {
+    color: #737373;
+    font-size: 16px;
+    font-weight: 600;
+    line-height: 20px;
+    text-decoration: none;
+}
+
+.help-email__icon {
+    margin-bottom: -1px;
+    margin-right: 5px;
+}
+
+.financial-user-info__link,
+.national-insurance-info__link {
+    display: block;
+    height: 56px;
+}
+
+.national-insurance-info__image {
+    height: 41px;
+    margin-top: 5px;
+}
+
+/*----------------------------------------------SECCION INFORMACION------------------------*/
+.nav-footer-access {
+    display: block;
+    position: relative;
+    font-family: "Proxima Nova", -apple-system, Roboto, Arial, sans-serif;
+    font-size: 13px;
+    font-weight: 400;
+    margin-top: 40px;
+}
+
+.expanded #nav-footer-access-switch {
+    background-color: #f7f7f7;
+}
+
+#nav-footer-access-switch {
+    border: 1px solid #e6e6e6;
+    border-bottom: none;
+    color: #666;
+    background-color: #fff;
+    cursor: pointer;
+    padding: 0 20px;
+    height: 32px;
+    line-height: 32px;
+    position: absolute;
+    left: 50%;
+    bottom: 100%;
+    transform: translate(-50%, 1px);
+    transition: all 200ms linear;
+    border-radius: 5px 5px 0 0;
+    z-index: 1;
+}
+
+.nav-footer-access-content {
+    line-height: 0;
+    overflow: hidden;
+    max-height: 0;
+    font-size: 0;
+    background-color: #f7f7f7;
+    border-top: 1px solid #e6e6e6;
+    margin-top: 30px;
+    position: relative;
+    bottom: 0px;
+    transition: all 200ms ease-in;
+}
+
+.nav-footer-access-expanded .nav-footer-access-content {
+    max-height: 270px;
+}
+
+.nav-footer-access-expanded .nav-bounds {
+    display: flex;
+    visibility: visible;
+    padding: 0 110px;
+    justify-content: space-between;
+}
+
+.nav-footer-access,
+.nav-footer-access *,
+.nav-footer-access *:before,
+.nav-footer-access *:after {
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+.nav-footer-access-col {
+    font-size: 14px;
+    display: inline-block;
+    vertical-align: top;
+    line-height: 1.6;
+    width: auto;
+    margin: 20px 0;
+}
+
+.nav-footer-access,
+.nav-footer-access *,
+.nav-footer-access *:before,
+.nav-footer-access *:after {
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+.nav-footer-access-title {
+    font-weight: 600;
+    margin: 0 0 5px;
+    margin-bottom: 14px;
+    font-size: 14px;
+    color: #333;
+}
+
+.nav-footer-access-col ul {
+    padding: 0;
+    margin: 0;
+    list-style: none;
+}
+
+.nav-footer-access,
+.nav-footer-access *,
+.nav-footer-access *:before,
+.nav-footer-access *:after {
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+.nav-footer-access-content a,
+.nav-footer-access-content a:visited,
+.nav-footer-access-content a:active,
+.nav-footer-access-content a:link {
+    color: #999;
+    text-decoration: none;
+}
+
+/*------------------------------------------COMIENZO FOO--------------------------*/
+/*------------------------------------------COMIENZO FOO--------------------------*/
+/*------------------------------------------COMIENZO FOO--------------------------*/
+.nav-footer .nav-bounds {
+    padding: 10px 10px;
+    max-width: 1200px;
+}
+
+.nav-footer,
+.nav-footer *,
+.nav-footer *:before,
+.nav-footer *:after {
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+.nav-footer-user-info {
+    border-top: none;
+}
+
+.nav-bounds {
+    display: block;
+    padding: 0 10px;
+    margin: 0 auto;
+}
+
+.nav-footer {
+    color: #999;
+    background-color: #fff;
+    font-family: "Proxima Nova", -apple-system, Roboto, Arial, sans-serif;
+    font-size: 13px;
+    font-weight: 400;
+    line-height: 1;
+    overflow: hidden;
+    border-top: 1px solid #e6e6e6;
+}
+
+.nav-footer,
+.nav-footer *,
+.nav-footer *:before,
+.nav-footer *:after {
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+.nav-footer-primaryinfo {
+    vertical-align: top;
+    position: relative;
+    display: flex;
+    flex-direction: column-reverse;
+    margin: 0;
+    border: 0;
+    padding-top: 0;
+    font-size: 0;
+}
+
+.nav-footer-primaryinfo .nav-footer-copyright {
+    font-size: 12px;
+    display: inline-block;
+    color: #999;
+    vertical-align: initial;
+    width: auto;
+    line-height: initial;
+    margin: 0;
+    padding-bottom: 2px;
+}
+
+.nav-footer-primaryinfo .nav-footer-navigation__menu {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: left;
+    padding: 0;
+    margin: 0;
+}
+
+.nav-footer-primaryinfo .nav-footer-navigation__item {
+    margin-bottom: 8px;
+    margin-right: 16px;
+}
+
+.nav-footer a,
+.nav-footer a:link,
+.nav-footer a:visited,
+.nav-footer a:active {
+    color: #333;
+    text-decoration: none;
+}
+
+.nav-footer-primaryinfo .nav-footer-navigation__item a.nav-footer-navigation__link {
+    font-size: 13px;
+}
+
+.nav-footer-primaryinfo .nav-footer-navigation a {
+    font-size: 13px;
+    padding-bottom: 8px;
+}
+
+@media only screen and (max-width: 850px) {
+    .nav-bounds {
+        flex-direction: column;
+        height: fit-content !important;
+    }
+
+    .nav-footer-access-expanded .nav-bounds {
+        padding: 5px;
+    }
+
+    .nav-footer-access-col {
+        display: flex;
+        justify-content: center;
+        width: 100%;
+        flex-direction: column;
+        margin: 5px auto;
+    }
+
+    .nav-footer-access-col ul {
+        display: flex;
+        justify-content: center;
+    }
+
+    .nav-footer-access-col ul li {
+        margin-left: 1rem;
+        font-size: .6rem;
+    }
+
+    .nav-footer-access-col h3 {
+        display: inline-block;
+        text-align: center;
+    }
+
+    .nav-footer-access-content {
+        max-height: fit-content;
+    }
+
+    .nav-footer-access-content {
+        max-height: fit-content;
+    }
+
+    .nav-footer-primaryinfo .nav-footer-navigation__item {
+        margin-bottom: 15px;
+    }
+}

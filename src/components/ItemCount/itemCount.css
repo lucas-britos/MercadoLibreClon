@@ -1,0 +1,177 @@
+.andes-select {
+    display: inline-block;
+    position: relative;
+    width: auto;
+    min-width: 110px;
+}
+
+.ui-pdp-buybox__quantity__container {
+    display: flex;
+    align-items: center;
+    width: 100%;
+    pointer-events: auto;
+}
+
+.andes-select select {
+    border: none;
+    outline: none;
+    box-shadow: none;
+    -moz-appearance: none;
+    appearance: none;
+    border: none;
+    background-color: transparent;
+    cursor: pointer;
+    padding: 0 30px 0 10px;
+    width: 100%;
+    height: 48px;
+    line-height: 48px;
+    font-size: 18px;
+    font-weight: 400;
+    color: #333;
+}
+
+.andes-select:after {
+    content: "";
+    position: absolute;
+    top: 50%;
+    right: 10px;
+    transform: translateY(-50%);
+    border-style: solid;
+    border-width: 8px 8px 0 8px;
+    border-color: #666 transparent transparent transparent;
+    pointer-events: none;
+}
+
+.ui-vip-core-container--short-description .ui-pdp-container__row--stock-information:not(:empty) {
+    margin-top: 24px;
+}
+
+.ui-vip-core-container--short-description .ui-pdp-container__row--available-quantity:not(:empty) {
+    margin-top: 16px;
+}
+
+.ui-pdp-buybox__quantity {
+    color: rgba(0, 0, 0, .9);
+}
+
+.ui-vip-core-container--short-description .ui-pdp-container__row--available-quantity:not(:empty) .andes-button {
+    border: 0;
+    line-height: 1;
+}
+
+.ui-pdp-buybox__quantity__trigger {
+    cursor: pointer;
+    padding: 0;
+}
+
+.andes-button--transparent,
+.andes-button--transparent:focus,
+.andes-button--transparent:link,
+.andes-button--transparent:visited {
+    background-color: transparent;
+    border-color: transparent;
+    color: #3483fa;
+}
+
+.andes-button--transparent {
+    box-shadow: 0 0 0 0 #fff;
+    cursor: pointer;
+    transition: background-color .2s ease-out, -webkit-box-shadow .25s ease-out;
+    transition: box-shadow .25s ease-out, background-color .2s ease-out;
+    transition: box-shadow .25s ease-out, background-color .2s ease-out, -webkit-box-shadow .25s ease-out;
+}
+
+.andes-button,
+.andes-button * {
+    box-sizing: border-box;
+}
+
+.andes-button {
+    border-radius: 6px;
+    display: inline-block;
+    font-family: Proxima Nova, -apple-system, Roboto, Arial, sans-serif;
+    font-size: 16px;
+    font-weight: 600;
+    height: 48px;
+    line-height: 48px;
+    padding: 0 24px;
+    text-align: center;
+    transition: .18s ease-out;
+    transition-property: background, color;
+    width: auto;
+}
+
+/* Removed redundant max-width that caused issues */
+.ui-pdp-buybox__quantity__trigger .andes-button__content {
+    display: flex;
+}
+
+.andes-button__content {
+    position: relative;
+    top: -1px;
+}
+
+.andes-button__content {
+    align-items: center;
+    display: flex;
+    height: 100%;
+    justify-content: center;
+}
+
+.ui-pdp-buybox__quantity__title {
+    color: rgba(0, 0, 0, .9);
+    font-size: 16px;
+    font-weight: 400;
+}
+
+.ui-pdp-buybox__quantity__selected {
+    color: rgba(0, 0, 0, .9);
+    font-size: 16px;
+    font-weight: 600;
+    margin-left: 4px;
+    white-space: nowrap;
+}
+
+.ui-pdp-buybox__quantity__available {
+    color: rgba(0, 0, 0, .55);
+    font-size: 14px;
+    font-weight: 400;
+    margin-left: 8px;
+    white-space: nowrap;
+    overflow: visible;
+    text-overflow: unset;
+    flex-shrink: 0;
+}
+
+.andes-list__item--size-medium .andes-list__item-first-column {
+    padding: 18px 0;
+}
+
+.andes-list__item-first-column {
+    align-items: center;
+    display: flex;
+    flex-grow: 4;
+}
+
+.ui-pdp-quantity-selector .andes-list__item.andes-list__item--selected .andes-list__item-primary {
+    color: #3483fa;
+    font-weight: 600;
+}
+
+.andes-list__item--selected .andes-list__item-primary {
+    color: #3483fa;
+    font-weight: 600;
+}
+
+.andes-list__item--size-medium .andes-list__item-primary,
+.andes-list__item--size-medium .andes-list__item-tertiary {
+    font-size: 16px;
+}
+
+.andes-list__item-primary {
+    color: rgba(0, 0, 0, .9);
+    display: block;
+}
+
+
+/* Cleanup: removed redundant and problematic selectors */

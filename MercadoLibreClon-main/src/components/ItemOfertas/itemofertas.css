@@ -1,0 +1,210 @@
+.card{
+    width: 95%;
+    height: 350px;
+    margin: auto;
+}
+.card-container-ofertas{
+    margin-right: 30px;
+    width: 250px !important;
+}
+.card-container-ofertas:first-child{
+    width: 225px !important;
+}
+.img-container-card{
+    height: 215px;
+    overflow: hidden;
+}
+.card-img-top{
+    height: 100%;
+    width: 100%;
+    object-fit: contain;
+}
+.ui-item__content{
+    border-top: 1px solid rgba(51,51,51,.1);
+    padding: 20px 16px;
+    position: relative;
+}
+.home .ui-item__price-block {
+    margin-top: -2px;
+    transition: margin-top .1s ease-out;
+}
+.ui-item__price-and-discount-wrapper{
+    align-items: center;
+    display: inline-flex 
+}
+.ui-item__discount-price.price-tag, .home .ui-item__title {
+    opacity: 0;
+    transition: .1s ease-out;
+    transition-property: opacity,top;
+    transition: visibility 0s;
+}
+.price-tag-text-sr-only {
+    clip: rect(0 0 0 0);
+    border: 0;
+    clip-path: inset(50%);
+    margin: 0 -1px -1px 0;
+    overflow: hidden;
+    padding: 0;
+    position: absolute;
+    white-space: nowrap;
+}
+.price-tag * {
+    float: left;
+}
+.price-tag {
+    display: inline-block;
+    line-height: 1em;
+    overflow: visible;
+    vertical-align: text-bottom;
+}
+.price-tag__disabled .price-tag-amount:after {
+    border-bottom-style: solid;
+    border-bottom-width: 1px;
+    content: "";
+    display: block;
+    height: 1px;
+    position: absolute;
+    top: 48%;
+    width: 100%;
+}
+.price-tag-symbol {
+    align-items: flex-end;
+    display: inline-flex;
+    height: 24px;
+    margin-right: .2em;
+}
+.strike-price{
+    display: none;
+    position: absolute;
+    top: 0;
+}
+.strike-price strike{
+    color: #666;
+}
+.ui-item__price-and-discount-wrapper {
+    align-items: center;
+    display: inline-flex;
+}
+.ui-item__installments {
+    -webkit-line-clamp: 1;
+    -webkit-box-orient: vertical;
+    display: -webkit-box;
+    overflow: hidden;
+    overflow-wrap: anywhere;
+    text-overflow: ellipsis;
+    color: #00a650;
+    margin-top: 4px;
+}
+.ui-item__container-free {
+    display: flex;
+}
+.ui-item__shipping-free {
+    color: #00a650;
+    font-size: 12px;
+    font-weight: 600;
+    line-height: 16px;
+    margin: 12px 0 0;
+}
+.home .ui-item__action, .home .ui-item__discount-price.price-tag, .home .ui-item__title {
+    opacity: 0;
+    transition: .1s ease-out;
+    transition-property: opacity,top;
+    transition: visibility 0s;
+}
+.ui-item__title {
+    margin-bottom: 0;
+    margin-top: 8px;
+    min-height: auto;
+}
+.ui-item__title {
+    color: #666;
+    margin-top: 40px;
+    max-height: 2.6em;
+    overflow: hidden;
+}
+.ui-item__brand, .ui-item__title {
+    font-size: 14px;
+    font-weight: 300;
+    line-height: 1.3;
+}
+.react-multiple-carousel__arrow{
+    top: 120px;
+    right: 1px;
+    background-color: #fff !important;
+    border-radius: 50%;
+    border-width: 0;
+    box-shadow: 0 2px 4px 0 rgb(0 0 0 / 19%);
+    cursor: pointer;
+    color: rgb(13, 110, 253);
+    height: 64px;
+    outline: 0;
+    position: absolute;
+    top: 48%;
+    width: 64px;
+    z-index: 2;
+}
+.react-multiple-carousel__arrow::before{
+    color: rgb(13, 110, 253);
+}
+.price-tag-fraction, .price-tag.ui-item__price .price-tag-symbol {
+    align-items: flex-end;
+    display: inline-flex;
+    height: 24px;
+    font-size: 22px;
+    color: #383838;
+}
+.ui-item__discount-text {
+    color: #00a650;
+    display: inline-block;
+    font-size: 14px;
+    vertical-align: 3px;
+    margin-left: 12px;
+    margin-top: 7px;
+}
+.enlace-container{
+    text-decoration: none;
+    color: inherit;
+}
+.caracteristicas{
+    clip: rect(0 0 0 0);
+    border: 0;
+    clip-path: inset(50%);
+    margin: 0 -1px -1px 0;
+    overflow: hidden;
+    padding: 0;
+    position: absolute;
+    white-space: nowrap;
+}
+.descuento{
+    color: #00a650;
+    display: inline-block;
+    font-size: 14px;
+    vertical-align: 3px;
+}
+.container-bottom-card{
+    width: 100% !important;
+}
+.ui-item__title{
+    visibility: hidden;
+}
+.card-container-ofertas:hover .ui-item__title {
+    visibility: visible;
+    transition: visibility 0.5s;
+}
+.card-container-ofertas:hover .strike-price{
+    display: block;
+}
+.card-container-ofertas{
+    transition: height 0.2s ease-in-out;
+    overflow: hidden;
+}
+.card-container-ofertas:hover{
+    position: static;
+    height: 390px;
+   /* ajusta la altura que desees */
+    box-shadow: 2px 20px 69px 2px rgba(28,28,28,0.1);
+    -moz-box-shadow: 2px 20px 69px 2px rgba(28,28,28,0.1);
+}
+.react-multiple-carousel__arrow--right {
+    display: none;
+}

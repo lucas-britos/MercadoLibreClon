@@ -1,0 +1,145 @@
+.loyalty-buylevel6{
+    display: block;
+    margin: -30px auto;
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    position: relative;
+    margin-bottom: 70px;
+}
+.loyalty-buylevel6__wrapper {
+    background-color: #fff;
+    border-radius: 6px;
+    box-shadow: 0 1px 1px 0 rgb(0 0 0 / 10%);
+    overflow: hidden;
+    width: 1184px;
+}
+.loyalty-buylevel6__header {
+    align-items: center;
+    background: -webkit-gradient(linear,left top,right top,color-stop(55%,#a90f90),to(#0c1a51));
+    background: -webkit-linear-gradient(left,#a90f90 55%,#0c1a51);
+    background: linear-gradient(90deg,#a90f90 55%,#0c1a51);
+    color: #fff;
+    display: flex;
+    justify-content: space-between;
+    min-height: 88px;
+    padding: 16px 24px;
+}
+.loyalty-buylevel6__header__title {
+    font-size: 26px;
+    font-weight: 600;
+    line-height: 30px;
+}
+.loyalty-buylevel6__header-pricing-with-serapator {
+    display: flex;
+    flex-direction: column;
+    font-weight: 600;
+    line-height: 1;
+    position: relative;
+    text-align: right;
+}
+.loyalty-buylevel6__header-pricing--left {
+    align-items: flex-start;
+}
+.loyalty-buylevel6__header-description--no-pill {
+    margin-top: 2px;
+    display:block;
+}
+.loyalty-buylevel6__body {
+    padding: 24px;
+}
+.loyalty-buylevel6__body-title {
+    display: block;
+    font-size: 18px;
+    line-height: 18px;
+}
+.loyalty-buylevel6__body-benefits {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 32px;
+    flex-wrap: wrap;
+}
+.loyalty-buylevel6__body-benefit {
+    align-items: center;
+    display: flex;
+    flex: 1;
+}
+.loyalty-buylevel6__body-benefit-logo {
+    border: 1px solid #efefef;
+    border-radius: 50%;
+    height: 72px;
+    min-height: 72px;
+    min-width: 72px;
+    overflow: hidden;
+    width: 72px;
+}
+.loyalty-buylevel6__body-benefit-text {
+    font-size: 16px;
+    line-height: 16px;
+    margin-left: 16px;
+    margin-right: 16px;
+}
+.loyalty-buylevel6__action {
+    align-items: center;
+    border-top: 1px solid #ededed;
+    display: flex;
+    justify-content: space-between;
+    padding: 16px 30px;
+}
+.loyalty-buylevel6__action-title {
+    font-size: 16px;
+}
+.andes-button--loud, .andes-button--loud:focus, .andes-button--loud:link, .andes-button--loud:visited {
+    background-color: #3483fa;
+    border-color: transparent;
+    color: #fff;
+    text-decoration: none;
+    -webkit-font-smoothing: antialiased;
+    border-radius: 6px;
+    display: inline-block;
+    font-family: Proxima Nova,-apple-system,Helvetica Neue,Helvetica,Roboto,Arial,sans-serif;
+    font-size: 16px;
+    font-weight: 600;
+    height: 48px;
+    line-height: 48px;
+    padding: 0 24px;
+    text-align: center;
+    transition: .18s ease-out;
+    transition-property: background,color;
+    width: auto;
+}
+.andes-button__content {
+    align-items: center;
+    display: flex;
+    justify-content: center;
+}
+.loyalty-buylevel6__body-benefit-logo{
+    height: 20px;
+    overflow: hidden;
+}
+.loyalty-buylevel6__body-benefit-logo img{
+    height: 100%;
+    width: 100%;
+    object-fit: contain;
+}
+.loyalty-buylevel6__header-price--bold{
+    font-size: 20px;
+}
+.loyalty-buylevel6__body-benefit-logo{
+    margin: 0;
+}
+.loyalty-buylevel6__body-benefÑit{
+    display: flex;
+}
+.loyalty-buylevel6__body-benefit-text{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+@media only screen and (max-width:787px) {
+    .slick-slide{
+        max-width: none;
+        margin-bottom: 5px;
+    }
+}

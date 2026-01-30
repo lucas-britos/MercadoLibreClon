@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?> 
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 48 48">
+    <defs>
+    <style>.cls-1{fill:none;}</style>
+    </defs>
+    <title>lipstick</title>
+    <g id="Layer_2" data-name="Layer 2"><g id="icons">
+    <path fill="rgb(52, 131, 250)" d="M22.62,9.07A1.07,1.07,0,0,0,21.54,8a1,1,0,0,0-.89.49l-3.92,3.93A2.15,2.15,0,0,0,16.09,14v5.62H15V37h8.71V19.58H22.62ZM17.18,14a1,1,0,0,1,.32-.77l3.92-3.93.09-.09,0,0V19.58H17.18Zm5.44,21.95H16.09V26.12h6.53Zm0-13.06H16.09V20.67h6.53Z"/>
+    <path fill="rgb(52, 131, 250)" d="M24.8,22.85V37h8.7V22.85Zm7.62,13.06H25.88v-12h6.54Z"/>
+    <rect fill="rgb(52, 131, 250)" x="26.97" y="25.03" width="1.09" height="5.44"/>
+    <rect fill="rgb(52, 131, 250)" x="26.97" y="31.56" width="1.09" height="1.09"/>
+    <rect class="cls-1" width="48" height="48"/></g></g></svg>
