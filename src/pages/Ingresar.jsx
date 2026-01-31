@@ -24,11 +24,6 @@ const Ingresar = () => {
 
     return (
         <div className="login-page">
-            <header className='nav-header nav-header-lite'>
-                <div className='nav-bounds'>
-                    <a href="/" className='nav-logo'>Mercado Libre</a>
-                </div>
-            </header>
             <main id='root-app'>
                 <div className='login-container'>
                     <div className='login-card'>
