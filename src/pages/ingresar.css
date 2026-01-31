@@ -1,147 +1,159 @@
-.platform--ml .nav-header {
+.login-page {
+    background-color: #f5f5f5;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+.nav-header-lite {
     background-color: #fff059;
-}
-
-.nav-header {
-    height: 3.5rem;
-}
-
-.nav-header {
-    border-bottom: 0;
-    -webkit-box-shadow: none;
-    box-shadow: none;
-}
-
-.nav-header {
-    background-color: #ffe600;
-    border: 0;
-    position: relative;
-}
-
-.nav-header {
-    background-image: none;
     height: 56px;
-    font-size: 13px;
-    font-weight: 400;
-}
-
-.nav-header .nav-bounds {
-    height: auto;
-    max-width: 1200px;
+    border-bottom: 1px solid #e6e6e6;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
 .nav-bounds {
-    display: block;
-    padding: 0 10px;
-    margin: 0 auto;
-}
-
-.nav-header .nav-bounds {
-    position: relative;
-    padding: 50px 0 0;
-}
-
-.nav-header .nav-bounds {
-    padding: 0 0 0 160px;
-    height: 56px;
-}
-
-.nav-header .nav-bounds {
-    height: auto;
+    width: 100%;
     max-width: 1200px;
+    padding: 0 10px;
 }
 
 .nav-logo {
-    background-image: url(https://http2.mlstatic.com/frontend-assets/ml-web-navigation/ui-navigation/5.19.1/mercadolibre/logo__large_plus.png);
-    height: 34px;
-    top: 11px;
-    width: 134px;
-}
-
-.nav-header {
-    background-image: none;
-    height: 56px;
-    font-size: 13px;
-    font-weight: 400;
-}
-
-.nav-header #nav-header-menu {
-    -webkit-align-items: center;
-    align-items: center;
-    display: -webkit-flex;
-    display: flex;
-    height: 3.5rem;
-    padding: 0 12px;
-}
-
-#nav-header-menu {
-    height: inherit;
-    margin: 0;
-    min-width: inherit;
-    padding: 0;
-    position: inherit;
-}
-
-#nav-header-menu {
-    height: 52px;
-    min-width: 340px;
-    text-align: right;
-    -webkit-font-smoothing: antialiased;
-    left: 2px;
-    padding-top: 4px;
-    margin-right: 15px;
-    margin-left: 0;
-}
-
-.wrap {
-    min-height: auto;
-}
-
-.center-card__billboard {
-    background-color: #fff059;
     display: block;
-    height: 11.375rem;
+    background-image: url(https://http2.mlstatic.com/frontend-assets/ml-web-navigation/ui-navigation/5.19.1/mercadolibre/logo__large_plus.png);
+    background-repeat: no-repeat;
+    height: 34px;
+    width: 134px;
+    text-indent: -9999px;
+    /* Hide text */
+}
+
+.login-container {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    /* Align to top initially, styled with margin */
+    padding-top: 60px;
+}
+
+.login-card {
+    background-color: white;
+    border-radius: 6px;
+    box-shadow: 0 1px 2px 0 rgba(0, 0, 0, .15);
     width: 100%;
-}
-
-.center-card__billboard,
-.center-card__body {
-    padding: 0 1.5rem;
-    text-align: left;
-}
-
-.center-card .center-card__body--centered {
+    max-width: 420px;
+    padding: 40px 64px;
+    margin-bottom: 20px;
     text-align: center;
 }
 
-.center-card .center-card__body {
-    -webkit-box-shadow: none;
-    box-shadow: none;
-}
-
-.andes-card>:first-child {
-    -webkit-border-top-left-radius: 6px;
-    border-top-left-radius: 6px;
-    -webkit-border-top-right-radius: 6px;
-    border-top-right-radius: 6px;
-}
-
-.center-card__header {
-    margin-top: 1rem;
-}
-
-.center-card__title {
-    color: rgba(0, 0, 0, .9);
-    font-size: 20px;
-    font-size: 1.25rem;
+.login-card__title {
+    font-size: 22px;
     font-weight: 600;
-    letter-spacing: .0125rem;
-    overflow-wrap: break-word;
+    color: #333;
+    margin-bottom: 30px;
+    line-height: 1.2;
 }
 
-.andes-card>:last-child {
-    -webkit-border-bottom-left-radius: 6px;
-    border-bottom-left-radius: 6px;
-    -webkit-border-bottom-right-radius: 6px;
-    border-bottom-right-radius: 6px;
+.login-card__options {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.login-btn {
+    width: 100%;
+    height: 48px;
+    border-radius: 6px;
+    font-size: 16px;
+    font-weight: 600;
+    cursor: pointer;
+    border: none;
+    transition: background-color 0.2s;
+}
+
+.google-btn {
+    background-color: #3483fa;
+    color: white;
+}
+
+.google-btn:hover {
+    background-color: #2968c8;
+}
+
+.google-btn:disabled {
+    background-color: #ccc;
+    cursor: not-allowed;
+}
+
+.email-btn {
+    background-color: transparent;
+    color: #3483fa;
+    border: 1px solid transparent;
+}
+
+.email-btn:hover {
+    background-color: #f5f5f5;
+}
+
+/* Secondary Actions */
+.login-help {
+    margin-top: 10px;
+    display: flex;
+    gap: 20px;
+    font-size: 14px;
+}
+
+.login-help a {
+    color: #3483fa;
+    text-decoration: none;
+    font-weight: 500;
+}
+
+.login-help a:hover {
+    text-decoration: none;
+}
+
+/* Footer */
+.login-footer {
+    padding: 20px;
+    text-align: center;
+    background-color: white;
+    border-top: 1px solid #e6e6e6;
+    margin-top: auto;
+    /* Push to bottom */
+}
+
+.login-footer__container {
+    font-size: 12px;
+    color: #999;
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+
+.login-footer a {
+    color: #333;
+    text-decoration: none;
+}
+
+@media (max-width: 480px) {
+    .login-card {
+        box-shadow: none;
+        background: transparent;
+        padding: 20px;
+    }
+
+    .login-container {
+        padding-top: 20px;
+    }
+
+    .nav-header-lite {
+        background-color: #ffe600;
+        /* Yellow on mobile often */
+    }
 }

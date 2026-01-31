@@ -3,11 +3,11 @@ import { useCartContext } from "../../context/Context"
 import { useAuth } from "../../context/AuthContext"
 import { addDoc, collection, getFirestore } from "firebase/firestore"
 import "./finalizar.css"
-import { Link } from 'react-router-dom'
+import { Link, useNavigate } from 'react-router-dom'
 
 const FinalizarCompra = () => {
   const { cart, totalPrice, removeCart, addPurchases } = useCartContext();
-  const { user } = useAuth();
+  const { user, loading: authLoading } = useAuth();
   const [orderId, setOrderId] = useState(null);
   const [loading, setLoading] = useState(false);
 
@@ -20,7 +20,13 @@ const FinalizarCompra = () => {
 
   const [errors, setErrors] = useState({});
 
+  const navigate = useNavigate();
+
   useEffect(() => {
+    if (!authLoading && !user) {
+      navigate('/session');
+    }
+
     if (user) {
       setFormData(prev => ({
         ...prev,
@@ -28,7 +34,11 @@ const FinalizarCompra = () => {
         email: user.email || prev.email
       }));
     }
-  }, [user]);
+  }, [user, authLoading, navigate]);
+
+  if (authLoading) {
+    return <div style={{ textAlign: 'center', marginTop: '50px' }}>Cargando...</div>;
+  }
 
   const handleChange = (e) => {
     const { name, value } = e.target;
